@@ -23,16 +23,18 @@ $(call inherit-product, device/samsung/dream2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dream2lte
-PRODUCT_NAME := lineage_dream2lte
+PRODUCT_NAME := aosp_dream2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G955F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \

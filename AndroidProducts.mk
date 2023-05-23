@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dream2lte.mk
+    $(LOCAL_DIR)/aosp_dream2lte.mk
